@@ -4,6 +4,8 @@ FROM gcr.io/google.com/cloudsdktool/google-cloud-cli:latest
 # RUN gcloud components install pubsub-emulator
 # RUN gcloud components install beta --quiet
 
+ENV PUBSUB_EMULATOR_LOGGING=debug
+
 # EXPOSE the emulator port
 EXPOSE 8085
 
